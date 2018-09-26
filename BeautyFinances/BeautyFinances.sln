@@ -5,16 +5,6 @@ VisualStudioVersion = 15.0.26430.15
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inicial", "Inicial\Inicial.csproj", "{A48B9D90-625B-47DA-9E1E-E87DF9A3A0B6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4841B2A9-D0EA-4294-AED2-F95A9CC690B4}"
-	ProjectSection(SolutionItems) = preProject
-		Cliente.cs = Cliente.cs
-		Comanda.cs = Comanda.cs
-		ControleFin.cs = ControleFin.cs
-		Funcionarios.cs = Funcionarios.cs
-		Horarios.cs = Horarios.cs
-		Servicos.cs = Servicos.cs
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
