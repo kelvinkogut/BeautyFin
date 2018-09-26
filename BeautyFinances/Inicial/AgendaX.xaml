@@ -1,0 +1,12 @@
+﻿<Window x:Class="Inicial.AgendaX"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Inicial"
+        mc:Ignorable="d"
+        Title="AgendaX" Height="416.165" Width="683.458">
+    <Grid Margin="0,0,-52,-31">
+
+    </Grid>
+</Window>
