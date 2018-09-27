@@ -1,5 +1,4 @@
-﻿using System;
-namespace Inicial.Models
+﻿namespace Inicial.Models
 {
     public class Horarios
     {
@@ -7,7 +6,7 @@ namespace Inicial.Models
         public int idFuncionario { get; set; }
         public string horarioinicio { get; set; }
         public string nomeFuncionario { get; set; }
-        public string nomeCliente { get; set; }
+        public int idCliente { get; set; }
         public int IdServico { get; set; }
         public int tempo { get; set; }
     }
