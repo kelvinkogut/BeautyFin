@@ -17,6 +17,7 @@
         <Label Content="Dia" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top"/>
         <Label Content="Cliente" HorizontalAlignment="Left" Margin="290,20,0,0" VerticalAlignment="Top"/>
         <Label Content="Serviço" HorizontalAlignment="Left" Margin="290,90,0,0" VerticalAlignment="Top"/>
+        <Button Content="Agendar" HorizontalAlignment="Left" Margin="290,240,0,0" VerticalAlignment="Top" Width="200" Height="48" Click="Button_Click"/>
 
     </Grid>
 </Window>
