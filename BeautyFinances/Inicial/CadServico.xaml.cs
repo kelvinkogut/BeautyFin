@@ -1,16 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Inicial
 {
@@ -22,6 +11,44 @@ namespace Inicial
         public CadServico()
         {
             InitializeComponent();
+        }
+
+        private void btnListar_Click(object sender, RoutedEventArgs e)
+        {
+            ListaServicos ls = new ListaServicos();
+            ls.Show();
+        }
+
+        private void btnCad_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+
+
+                using (var db = new ModelContext())
+                {
+                    db.Servicos.Add(new Models.Servico()
+                    {
+                        NomeServico = txtNome.Text,
+                        descricao = txtDesc.Text,
+                        duracao = (int)udDuracao.Value,
+                        valorservico = Convert.ToDouble(txtValor.Text),
+                    });
+                    db.SaveChanges();
+
+
+
+                }
+                //txtEnd.Text = "";
+                //txtNasci.Text = "";
+                //txtNome_.Text = "";
+                MessageBox.Show("Cadastrado com sucesso!!!");
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         Title="AgendaX" Height="363.541" Width="531.326">
     <Grid Margin="0,0,-52,-31">
-        <ComboBox x:Name="cbFuncionario" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top" Width="200" SelectedValue="ID" DisplayMemberPath="Nome"/>
+        <ComboBox x:Name="cbFuncionario" HorizontalAlignment="Left" Margin="30,50,0,0" VerticalAlignment="Top" Width="200" SelectedValue="ID" DisplayMemberPath="nome"/>
         <ComboBox x:Name="cbCliente" HorizontalAlignment="Left" Margin="290,50,0,0" VerticalAlignment="Top" Width="200" SelectedValue="ID" DisplayMemberPath="Nome"/>
-        <ComboBox x:Name="cbServico" HorizontalAlignment="Left" Margin="290,121,0,0" VerticalAlignment="Top" Width="200"/>
+        <ComboBox x:Name="cbServico" HorizontalAlignment="Left" Margin="290,121,0,0" VerticalAlignment="Top" Width="200" SelectedValue="ID" DisplayMemberPath="NomeServico"/>
         <Calendar x:Name="cldDia" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="200"/>
         
         

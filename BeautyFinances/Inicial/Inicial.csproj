@@ -105,6 +105,9 @@
     <Compile Include="Funcionarios.xaml.cs">
       <DependentUpon>Funcionarios.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ListaServicos.xaml.cs">
+      <DependentUpon>ListaServicos.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListaClientes.xaml.cs">
       <DependentUpon>ListaClientes.xaml</DependentUpon>
     </Compile>
@@ -176,6 +179,10 @@
     <Page Include="Funcionarios.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListaServicos.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ListaClientes.xaml">
       <SubType>Designer</SubType>
