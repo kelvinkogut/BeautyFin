@@ -35,5 +35,11 @@ namespace Inicial
             Financeiro fc = new Financeiro();
             fc.Show();
         }
+
+        private void btnFunc_Click(object sender, RoutedEventArgs e)
+        {
+            Funcionarios fc = new Funcionarios();
+            fc.Show();
+        }
     }
 }

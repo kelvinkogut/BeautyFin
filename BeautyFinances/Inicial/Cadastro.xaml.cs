@@ -31,7 +31,7 @@ namespace Inicial
             {
                 //db.Horarios.Add(new Horarios { });
                 //var cliente = new Cliente();
-                //cliente.Nome = "Max";
+                //cliente.Nome = "kelvin";
                 //cliente.nascimento = DateTime.Today;
                 //cliente.UltimaVisita = DateTime.Today;
                 //db.Clientes.Add(cliente);

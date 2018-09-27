@@ -17,7 +17,7 @@ namespace Inicial
         public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Comanda> Comandas { get; set; }
         public DbSet<ControleFin> ControleFins { get; set; }
-        public DbSet<Funcionarios> Funcionarios { get; set; }
+        public DbSet<Models.Funcionarios> Funcionarios { get; set; }
         public DbSet<Horarios> Horarios { get; set; }
         public DbSet<Servico> Servicos { get; set; }
        
