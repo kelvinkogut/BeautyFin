@@ -102,8 +102,14 @@
     <Compile Include="Financeiro.xaml.cs">
       <DependentUpon>Financeiro.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Funcionarios.xaml.cs">
+      <DependentUpon>Funcionarios.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ListaClientes.xaml.cs">
       <DependentUpon>ListaClientes.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListarFuncionario.xaml.cs">
+      <DependentUpon>ListarFuncionario.xaml</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201809242108055_Inicial.cs" />
     <Compile Include="Migrations\201809242108055_Inicial.Designer.cs">
@@ -167,7 +173,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Funcionarios.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ListaClientes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListarFuncionario.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

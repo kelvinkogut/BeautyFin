@@ -11,7 +11,7 @@
     </Window.Resources>
     <!--<ListView x:Name="clientesListView" DisplayMemberPath="Nome" ItemsSource="{Binding Source={StaticResource clientesViewSource}}" Margin="10,10,2,19" SelectedValuePath="ID" SelectionMode="Single"/>-->
     <Grid>
-        <ListView Margin="10" Name="lvUsers">
+        <ListView Margin="5" Name="lvUsers">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Nome" Width="180" DisplayMemberBinding="{Binding Nome}" />

@@ -29,5 +29,11 @@ namespace Inicial
             CadServico cs = new CadServico();
             cs.Show();
         }
+
+        private void btnFunc_Click(object sender, RoutedEventArgs e)
+        {
+            Funcionarios fc = new Funcionarios();
+            fc.Show();
+        }
     }
 }
