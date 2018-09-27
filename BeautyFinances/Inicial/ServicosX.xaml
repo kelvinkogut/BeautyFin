@@ -15,7 +15,7 @@
         </Grid.Background>
         <Button x:Name="btnAgen" Content="Agendas" HorizontalAlignment="Left" Margin="32,86,0,0" VerticalAlignment="Top" Width="126" Height="110" Click="btnAgen_Click"/>
         <Button x:Name="btnFunc" Content="Funcionarios" HorizontalAlignment="Left" Margin="195,86,0,0" VerticalAlignment="Top" Width="122" Height="110"/>
-        <Button x:Name="btnServ" Content="Serviços" HorizontalAlignment="Left" Margin="351,86,0,0" VerticalAlignment="Top" Width="122" Height="110"/>
+        <Button x:Name="btnServ" Content="Serviços" HorizontalAlignment="Left" Margin="351,86,0,0" VerticalAlignment="Top" Width="122" Height="110" Click="btnServ_Click"/>
         <Button x:Name="btnFinanceiro" Content="Financeiro" HorizontalAlignment="Left" Margin="498,86,0,0" VerticalAlignment="Top" Width="122" Height="110" Click="btnFinanceiro_Click"/>
 
     </Grid>

@@ -96,6 +96,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="CadServico.xaml.cs">
+      <DependentUpon>CadServico.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Financeiro.xaml.cs">
       <DependentUpon>Financeiro.xaml</DependentUpon>
     </Compile>
@@ -130,6 +133,10 @@
     <Compile Include="Migrations\201809242118145_Campos Novos.Designer.cs">
       <DependentUpon>201809242118145_Campos Novos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809270037425_Alteração da model agenda.cs" />
+    <Compile Include="Migrations\201809270037425_Alteração da model agenda.Designer.cs">
+      <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="AgendaX.xaml.cs">
@@ -149,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Cadastro.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CadServico.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -214,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809242118145_Campos Novos.resx">
       <DependentUpon>201809242118145_Campos Novos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809270037425_Alteração da model agenda.resx">
+      <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
