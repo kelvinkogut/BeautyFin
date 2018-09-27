@@ -1,16 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Inicial
 {
@@ -22,6 +12,13 @@ namespace Inicial
         public AgendaX()
         {
             InitializeComponent();
+            cldDia.DisplayDateStart = DateTime.Today;
+
+            using (var db = new ModelContext())
+            {
+                cbFuncionario.ItemsSource = db.Funcionarios.ToList();
+                cbCliente.ItemsSource = db.Clientes.ToList();
+            }
         }
     }
 }

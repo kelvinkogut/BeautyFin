@@ -1,17 +1,6 @@
-﻿using Inicial.Models;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace Inicial
 {
@@ -29,47 +18,34 @@ namespace Inicial
         {
             using (var db = new ModelContext())
             {
-                //db.Horarios.Add(new Horarios { });
-                //var cliente = new Cliente();
-                //cliente.Nome = "Max";
-                //cliente.nascimento = DateTime.Today;
-                //cliente.UltimaVisita = DateTime.Today;
-                //db.Clientes.Add(cliente);
-
-                db.Clientes.Add(new Models.Cliente
+                if (db.Clientes.Where(a => a.ciccgc == txtCPF.Text).Count() == 0)
                 {
-                    Nome = txtNome.Text,
-                    endereco = txtEndere.Text,
-                    ciccgc = txtCPF.Text,
-                    telefone = txtTele.Text,
-                    sexo = txtSexo.Text,
-                    
-                    UltimaVisita = DateTime.Today,
-                    nascimento = Convert.ToDateTime(txtNascime.Text)
-                });
+                    db.Clientes.Add(new Models.Cliente
+                    {
+                        Nome = txtNome.Text,
+                        endereco = txtEndere.Text,
+                        ciccgc = txtCPF.Text,
+                        telefone = txtTele.Text,
+                        sexo = txtSexo.Text,
+                        UltimaVisita = DateTime.Today,
+                        nascimento = Convert.ToDateTime(txtNascime.Text)
+                    });
 
-                db.SaveChanges();
+                    db.SaveChanges();
+
+                    txtTele.Text = "";
+                    txtSexo.Text = "";
+                    txtNome.Text = "";
+                    txtNascime.Text = "";
+                    txtEndere.Text = "";
+                    txtCPF.Text = "";
+                    MessageBox.Show("Cadastrado com sucesso!");
+                }
+                else
+                {
+                    MessageBox.Show("Cliente já existe!");
+                }
             }
-            txtTele.Text = "";
-            txtSexo.Text = "";
-            txtNome.Text = "";
-            txtNascime.Text = "";
-            txtEndere.Text = "";
-            txtCPF.Text = "";
-            MessageBox.Show("Cadastrador com sucesso!");
-            //using (var db = new ModelContext())
-            //{
-            //    var cliente = db.Clientes.First(a => a.Nome == "Max");
-
-            //    var lista = from c in db.Clientes
-            //                where c.nascimento == DateTime.Today
-            //                select c.Nome;
-
-            //    foreach (var item in db.Clientes)
-            //    {
-
-            //    }
-            //}
         }
 
         private void btnListar_Click(object sender, RoutedEventArgs e)
