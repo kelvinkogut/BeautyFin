@@ -146,6 +146,10 @@
     <Compile Include="Migrations\201809270037425_Alteração da model agenda.Designer.cs">
       <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201809270317000_Lista de servicos no agendamento.cs" />
+    <Compile Include="Migrations\201809270317000_Lista de servicos no agendamento.Designer.cs">
+      <DependentUpon>201809270317000_Lista de servicos no agendamento.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelContext.cs" />
     <Compile Include="AgendaX.xaml.cs">
@@ -249,6 +253,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201809270037425_Alteração da model agenda.resx">
       <DependentUpon>201809270037425_Alteração da model agenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201809270317000_Lista de servicos no agendamento.resx">
+      <DependentUpon>201809270317000_Lista de servicos no agendamento.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

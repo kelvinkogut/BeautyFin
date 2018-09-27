@@ -1,5 +1,6 @@
 ﻿using Inicial.Models;
 using System;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows;
 
@@ -10,6 +11,9 @@ namespace Inicial
     /// </summary>
     public partial class AgendaX : Window
     {
+        private Horarios horarios = new Horarios();
+        ObservableCollection<Servico> sourceServico = new ObservableCollection<Servico>();
+
         public AgendaX()
         {
             InitializeComponent();
@@ -21,6 +25,7 @@ namespace Inicial
                 cbCliente.ItemsSource = db.Clientes.ToList();
                 cbServico.ItemsSource = db.Servicos.ToList();
             }
+            lvServicos.ItemsSource = sourceServico;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -31,10 +36,13 @@ namespace Inicial
                 {
                     db.Horarios.Add(new Horarios
                     {
-                        idFuncionario = (int)cbFuncionario.SelectedValue,
-                        idCliente = (int)cbCliente.SelectedValue,
-                        IdServico = (int)cbServico.SelectedValue,
-
+                        idFuncionario = ((Models.Funcionarios)cbFuncionario.SelectedValue).ID,
+                        idCliente = ((Cliente)cbCliente.SelectedValue).ID,
+                        IdServico = ((Servico)cbServico.SelectedValue).ID,
+                        Servicos = horarios.Servicos.ToList(),
+                        DataServico = cldDia.SelectedDate.Value,
+                        horarioinicio = tpHorario.Value.Value.Hour.ToString(),
+                        tempo = (int)horarios.Servicos.Distinct().Sum(a => a.duracao)
                     });
                 }
             }
@@ -58,6 +66,12 @@ namespace Inicial
                 return false;
             }
             return true;
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            sourceServico.Add((Servico)cbServico.SelectedValue);
+            lblTotal.Content = sourceServico.Sum(a => a.valorservico);
         }
     }
 }
